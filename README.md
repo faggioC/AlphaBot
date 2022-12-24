@@ -1,2 +1,2 @@
 # Alphabot
-progetto alphabot di Faggio Cristian e Pellegrino Simone 
+Progetto Alphabot di Faggio Cristian e Pellegrino Simone 
