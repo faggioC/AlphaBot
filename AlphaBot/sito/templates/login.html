@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trudy l'AlphaBot</title>
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
   </head>
   <body>
-    <h1>TRUDY L'ALPHABOT!</h1>
+    <div id = "header_top"><h1>TRUDY L'ALPHABOT!</h1></div>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -32,14 +33,24 @@
       </button>
     </div>
     <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div id="login">
+      <h2 style="padding-bottom: 20px;">LOGIN</h2>
+    <form action="" method="POST">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="username" name="username" value = "{{request.form.username}}">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password"  value = "{{request.form.password}}">
+          </div>
 
-    <form method="post" action="">
-      <br>
-      <input type="submit" value="Avanti" name="Avanti">
-      <input type="submit" value="Indietro" name="Indietro">
-      <input type="submit" value="Destra" name="Destra">
-      <input type="submit" value="Sinistra" name="Sinistra">
-      <input type="submit" value="Stop" name="Stop">
+          {% if error %}
+              <p class="error"><strong>Error: </strong></p> {{ error }}
+          {% endif %}
+
+          <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+  </div>
   </body>
 </html>

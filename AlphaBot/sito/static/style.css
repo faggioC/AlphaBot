@@ -1,0 +1,18 @@
+#header_top{
+    background-color: rgba(20, 142, 213, 0.808);
+    height: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#login{
+    background-color: rgba(163, 208, 235, 0.922);
+    text-align: center;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
